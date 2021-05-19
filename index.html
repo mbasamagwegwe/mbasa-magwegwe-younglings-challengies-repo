@@ -35,26 +35,25 @@
         <div class="image">
             <br><br><br>
             <img src="mb.jpg" width="100" height="100">
-            <p>
-                <font color="Red">Candidate</font>
-            </p>
+            </font>
             <p id="yay"></p>
+
             <input box="user" placeholder="User Name" class="inputs">
-            <button onclick="myFunction()">Alive?</button>
+            <p id="name"></p>
+            <button onclick="myFunction()">WHAT IS YOUR NAME</button>
             <button onclick="myFunction2()">Happy?</button>
             <br><br>
-            <button onclick="myFunction3()">Healthy?</button>
-            <button onclick="myFunction4()">Employed?</button><br><br>
-            <button onclick="myFunction5()">Promoted?</button>
 
+            <button onclick="myFunction5()">Promoted?</button>
+            <button onclick="myFunction6()">Exit</button>
     </center>
     <script>
-        A
-
         function myFunction() {
-            var names = document.querySelector(".inputs").value;
-            document.getElementById("yay").innerHTML = "You are blessed" + " " + " " + names + "!";
-            document.querySelector(".inputs").value = "";
+            var person = prompt("Please enter your name", "entername");
+            if (person != null) {
+                document.getElementById("name").innerHTML =
+                    "Hello " + person + "! How are you today?";
+            }
         }
 
         function myFunction2() {
@@ -63,22 +62,16 @@
             document.querySelector(".inputs").value = "";
         }
 
-        function myFunction3() {
-            var names = document.querySelector(".inputs").value;
-            document.getElementById("yay").innerHTML = "Perfect" + " " + " " + names + "!";
-            document.querySelector(".inputs").value = "";
-        }
 
-        function myFunction4() {
-            var names = document.querySelector(".inputs").value;
-            document.getElementById("yay").innerHTML = "Congratulations" + " " + " " + names + "!";
-            document.querySelector(".inputs").value = "";
-        }
 
         function myFunction5() {
             var names = document.querySelector(".inputs").value;
             document.getElementById("yay").innerHTML = "Wow" + " " + " " + names + "!";
             document.querySelector(".inputs").value = "";
+        }
+
+        function myFunction6() {
+            alert("are you sure ou want to leave?");
         }
     </script>
 </body>
