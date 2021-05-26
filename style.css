@@ -1,40 +1,52 @@
 body {
-    background-color: black;
+    width: 50%;
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: coral;
 }
 
-img {
-    margin-top: 80px;
+.container {
+    width: 360px;
+}
+
+#inputField {
+    width: 300px;
+    height: 46px;
+    border: 2px solid black;
+    outline: none;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+#addToDo {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.to-dos {
+    margin-top: 25px;
+}
+
+.paragraph-styling {
+    margin: 0;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 p {
-    color: white;
-    font-size: 75px;
+    font-size: 20px;
+    font-style: italic;
 }
 
-hr {
-    width: fit-content;
-    height: fit-content;
-    color: red;
-}
-
-.navbar {
-    text-align: center;
-    padding: 20px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 25px;
-    font-family: anton;
-    margin-right: 80px;
-    border: 2px solid transparent;
-    padding: 10px;
-    transition: 0.3s;
-}
-
-.navbar a:hover {
-    background: red;
-    border: 2px solid#fff;
-    height: 50px;
+button {
+    border-style: double;
+    color: black;
+    width: 200px;
+    height: 200px;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;
 }
